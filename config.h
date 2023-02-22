@@ -7,16 +7,15 @@ static const char *fonts[] = {
 	"Cascadia Code:size=10"
 };
 
-static const char col_grey1[]       = "#2E3440";
-static const char col_grey2[]       = "#44475a";
-static const char col_text[]        = "#D8DEE9";
-static const char col_main[]        = "#ffd1dc";
+static const char col_grey[]        = "#1d2021";
+static const char col_lightg[]      = "#3c3836";
+static const char col_white[]       = "#ebdbb2";
 
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { col_text, col_grey1 },
-	[SchemeSel] = { col_grey1, col_main },
+	[SchemeNorm] = { col_white, col_grey },
+	[SchemeSel] = { col_white, col_lightg },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
